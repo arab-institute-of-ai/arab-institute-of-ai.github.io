@@ -1,0 +1,28 @@
+# Dependencies
+# markdown:         redcarpet
+markdown:         kramdown
+highlighter:      pygments
+
+# Permalinks
+permalink:        pretty
+# relative_permalinks: true
+
+# Setup
+title:            AIAI
+tagline:          'A Jekyll theme'
+description:      'مؤسسةال العربي للذكاء الاصطناعي'
+url:              http://hyde.getpoole.com
+baseurl:          /
+
+author:
+  name:           'Zahi Kakish'
+  url:            https://twitter.com/zkakish
+
+plugins: [jekyll-paginate]
+paginate:         5
+
+# Custom vars
+version:          2.1.0
+
+github:
+  repo:           https://github.com/Arab-Institute-of-AI

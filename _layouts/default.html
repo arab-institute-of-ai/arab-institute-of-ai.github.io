@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  {% if page.arabic %}
+    <div dir="rtl">
+      {% include head.html %}
+    </div>
+
+    <body class="theme-base-08 layout-reverse">
+
+      {% include sidebar.html %}
+  
+      {% if page.arabic %}
+        <div class="content container" dir="rtl">
+          {{ content }}
+        </div>
+      {% else %}
+        <div class="content container">
+          {{ content }}
+        </div>
+      {% endif %}
+  
+    </body>
+  {% else %}
+    {% include head.html %}
+
+    <body class="theme-base-08">
+
+      {% include sidebar.html %}
+  
+      {% if page.arabic %}
+        <div class="content container">
+          {{ content }}
+        </div>
+      {% else %}
+        <div class="content container">
+          {{ content }}
+        </div>
+      {% endif %}
+  
+    </body>
+
+  {% endif %}
+</html>
